@@ -9,8 +9,8 @@ public class main {
         Class.forName("com.mysql.jdbc.Driver");
 
         String dbURL = "jdbc:mysql://localhost:3306/valet";
-        String user = "student";
-        String pass = "student";
+        String user = "root";
+        String pass = "";
         Connection myConn = DriverManager.getConnection(dbURL, user, pass);
 
         Statement myStmt = myConn.createStatement();
